@@ -1,0 +1,12 @@
+{
+  "name": "github-pr-index",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Extension to show head line list in pull request page",
+  "content_scripts": [{
+    "matches": ["https://github.com/*/*/pulls"],
+    "js": [
+      "content.js"
+    ]
+  }]
+}
