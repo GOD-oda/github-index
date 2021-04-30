@@ -4,7 +4,10 @@
   "manifest_version": 2,
   "description": "Extension to show head line list in pull request page",
   "content_scripts": [{
-    "matches": ["https://github.com/*/*/pull/*"],
+    "matches": [
+      "https://github.com/*/*/issues/*",
+      "https://github.com/*/*/pull/*"
+    ],
     "js": [
       "content.js"
     ]
